@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <a href="home.html" class="navbar-brand">
+            <div class="brand-pa"><span class="div-span"><i class="fa-solid fa-caret-down down"
+                        style="color:#000;"></i><i class="fa-solid fa-caret-up up" style="color:#000;"></i></span>
+                <p>HopeHands Foundation</p>
+            </div>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a> </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="cause.html">Causes</a> </li>
+                <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a> </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a> </li>
+                <button type="button" class="donate-btn" onclick="openDonate()">Donate Now</button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="home-img">
+                    <h2>Together, We can Change Lives</h2>
+                    <p>Your kindness today can bring hope, health and happiness to someone in need.</p>
+                    <div class="home-imgcard"><button type="button" class="home-btn" onclick="openDonate()">Donate Now</button>
+                    <button type="button" class="home-btn1" onclick="openVolun()">Become a Volunteer</button></div>
+
+                </div>
+                <div class="home-card">
+                    <h5>Our Mission</h5>
+                    <p>At HopeHands Foundation, our mission is to empower communities and transform lives through
+                        compassionate action and sustainable solutions. We are dedicated to providing essential
+                        resources, fostering education, and promoting well-being for those facing adversity. Together,
+                        we strive to build a brighter future, one hand at a time.</p>
+                </div>
+
+            </div>
+            <h5 class="home-h5">Our Causes</h5>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="home-card1">
+                    <img src="images/Depth 7, Frame 1.jpg">
+                    <h6>Education for Children</h6>
+                    <p>Providing quality education and resources to underprivileged children, ensuring they have the
+                        opportunity to succeed.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="home-card1">
+                    <img src="images/Depth 7, Frame 3.jpg">
+                    <h6>Medical Support</h6>
+                    <p>Offering medical assistance and healthcare support to those in need, ensuring access to essential
+                        medical services.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="home-card1">
+                    <img src="images/Depth 7, Frame 2.jpg">
+                    <h6>Food & Shelter</h6>
+                    <p>Providing food, shelter and basic necessities to individuals and families facing hardship and
+                        homelessness.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="home-card1">
+                    <img src="images/Depth 7, Frame 0.jpg">
+                    <h6>Disaster Relief</h6>
+                    <p>Responding swiftly to natural disasters and providing immediate relief and long-term support to
+                        affected communities.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="home-card2">
+                    <button type="button" class="home-btn2" onclick="openDonate()">Donate</button>
+                    <button type="button" class="home-btn3" onclick="openLearn()">Learn More</button>
+                </div></div>
+                <h5 class="home-h5">Impact Section</h5>
+                
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="home-div">
+                            <p>Lives helped</p>
+                            <p class="count-pa">10,000+</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="home-div">
+                            <p>Volunteers</p>
+                            <p class="count-pa">500+</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="home-div">
+                            <p>Projects Completed</p>
+                            <p class="count-pa">120+</p>
+                        </div>
+                    </div>
+                <h5 class="home-h5">Stories/Testimonials</h5>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home-test">
+                        <div class="home-test1">
+                            <img src="images/Depth 7, Frame 5.jpg">
+                            <p class="name-test"><span class="name-span">Sophia Carter</span><br><span>2023-08-15</span></p>
+                        </div>
+                        <div class="home-test2">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><p>
+                                <p>"HopeHands Foundation has truly made a difference in my life. Their support helped me get back on my feet during a difficult time."</p>
+                                <p class="like-pa"><i class="fa-regular fa-thumbs-up fb-like"></i> 12 <i class="fa-regular fa-thumbs-down fb-dislike"></i>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home-test">
+                        <div class="home-test1">
+                            <img src="images/Depth 7, Frame 4.jpg">
+                            <p class="name-test"><span class="name-span">Ethan Bennett</span><br><span>2023-07-22</span></p>
+                        </div>
+                        <div class="home-test2">
+                            <p class="star-pa"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><p>
+                                <p>"Volunteering with HopeHands has been an incredibly rewarding experience. Seeing the impact we make is truly inspiring."</p>
+                                <p class="like-pa"><i class="fa-regular fa-thumbs-up fb-like"></i> 15 <i class="fa-regular fa-thumbs-down fb-dislike"></i>1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home-test">
+                        <div class="home-test1">
+                            <img src="images/Depth 8, Frame 0.jpg">
+                            <p class="name-test"><span class="name-span">Olivia Hayes</span><br><span>2023-06-10</span></p>
+                        </div>
+                        <div class="home-test2">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><p>
+                                <p>"The dedication and compassion of HopeHands Foundation are unmatched. They are a beacon of hope for so many."</p>
+                                <p class="like-pa"><i class="fa-regular fa-thumbs-up fb-like"></i> 10 <i class="fa-regular fa-thumbs-down fb-dislike"></i>3</p>
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="foot-card">
+                        <button class="foot-btn" type="button"><a href="about.html">About Us</a></button>
+                        <button class="foot-btn" type="button"><a href="cause.html">Our Programs</a></button>
+                        <button class="foot-btn" type="button"><a href="volunteer.html">Volunteer</a></button>
+                        <button class="foot-btn" type="button"><a href="donate.html">Donate</a></button>
+                        <button class="foot-btn" type="button"><a href="contact.html">Contact</a></button>
+                    </div>
+                    <div class="foot-card1">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"> </i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"> </i></a>
+                        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"> </i></a>
+                        <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"> </i></a>
+                    </div>
+                    <div class="foot-card2">
+                        <p>&copy; 2024 HopeHands Foundation. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer>
+    </script>
+</body>
+
+</html>
