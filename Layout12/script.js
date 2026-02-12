@@ -81,7 +81,7 @@ function changeText(){
     const time1=document.getElementById("v_time").value.trim();
     const volBtn=document.getElementById("volBtn1");
     const email1Pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    const phone1Pattern=/^d{10}$/;
+    const phone1Pattern = /^\d{10}$/;
 
      if(name1=="" || email1=="" || phone1=="" || area1=="" || time1==""){
         alert("Please Fill All Fields");
@@ -109,3 +109,4 @@ function changeText(){
         window.location.href="cause.html";
 
     }
+
