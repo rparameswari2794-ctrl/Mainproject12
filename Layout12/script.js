@@ -6,6 +6,7 @@ function openCheck(){
     const email=document.getElementById("c_email");
     if(!email.checked){
         email.focus();
+        alert("Please Select the Checkbox");
         return;
     } else{
         window.location.href="volunteer.html";  
@@ -80,7 +81,7 @@ function changeText(){
     const time1=document.getElementById("v_time").value.trim();
     const volBtn=document.getElementById("volBtn1");
     const email1Pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    
+    const phone1Pattern=/^d{10}$/;
 
      if(name1=="" || email1=="" || phone1=="" || area1=="" || time1==""){
         alert("Please Fill All Fields");
@@ -88,6 +89,10 @@ function changeText(){
      } 
       if (!email1Pattern.test(email1)) {
         alert("Please enter a valid email address");
+        return;
+    }
+     if (!phone1Pattern.test(phone1)) {
+        alert("Please enter a valid Phone Number");
         return;
     }
 
@@ -102,4 +107,5 @@ function changeText(){
 
     function openLearn(){
         window.location.href="cause.html";
+
     }
